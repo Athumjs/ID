@@ -1,0 +1,244 @@
+main {
+  height: 100dvh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  scrollbar-color: white transparent;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  height: 96dvh;
+  background-color: white;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+form > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+form > section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+form > section > label {
+  position: absolute;
+  left: 30px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+form > section:focus-within > label {
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+form > section > input:not(:placeholder-shown) + label {
+  background-color: cornflowerblue;
+  color: white;
+  transform: translateY(-22px);
+}
+
+form > section > input {
+  width: 90%;
+  padding: 8px;
+  font-size: 1.05em;
+  outline: none;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+form > section.destaque > p {
+  position: absolute;
+  top: -10px;
+  left: 35px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+form > section.destaque > section {
+  width: 90%;
+  display: flex;
+  padding: 15px;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  gap: 0.5em;
+  overflow-x: auto;
+}
+
+form > section#virtudes label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+
+form > section#virtudes input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.05em;
+  outline: none;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+form > section#pericias select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.05em;
+  outline: none;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+form > section > button {
+  width: 90%;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 8px;
+  font-size: 1.05em;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+form > section > button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid cornflowerblue;
+}
+
+section#ficha {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+section#ficha > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section#ficha > section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2em;
+  gap: 1em;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+section#ficha > section > h2 {
+  position: absolute;
+  top: -18px;
+  left: 12px;
+  font-size: 1em;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+section#gf {
+  width: 100%;
+  max-width: 400px;
+  height: 96dvh;
+  background-color: white;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+section#gf > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section#gf > div {
+  height: 90%;
+  padding: 2em;
+  overflow-y: auto;
+}
+
+section#gf section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2em;
+  gap: 1em;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+section#gf section:hover {
+  background-color: cornflowerblue;
+  color: white;
+  border: 2px solid #4f7cd1;
+  transform: translateY(-8px);
+}
+
+section#gf section:hover > h2 {
+  background-color: #4f7cd1;
+}
+
+section#gf section > h2 {
+  position: absolute;
+  top: -18px;
+  left: 12px;
+  font-size: 1em;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+section#gf section > button {
+  background-color: transparent;
+  padding: 2px;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+section#gf section > button:hover {
+  background-color: red;
+}
